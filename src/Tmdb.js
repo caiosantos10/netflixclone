@@ -69,7 +69,7 @@ export default {
     getMovieById: async (id, type) => {
         let info = {};
         if (id && type) {
-            info = await basicFetch(`/movie/${id}?language=pt-BR&api_key=${API_KEY}`);
+            info = await basicFetch(`/${type}/${id}?language=pt-BR&api_key=${API_KEY}`);
         } else {
             throw Error('id and type (movie or tv) are required')
         }

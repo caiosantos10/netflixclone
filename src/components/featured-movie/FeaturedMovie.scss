@@ -1,3 +1,9 @@
 .featured {
     height: 100vh;
+
+    &--vertical-fade {
+        width: inherit;
+        height: inherit;
+        background: linear-gradient(to top, #111, transparent);
+    }
 }
