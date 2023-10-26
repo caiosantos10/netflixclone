@@ -10,7 +10,10 @@ body {
     margin: 0;
     font-family: 'Roboto', 'sans-serif';
 }
-
+.page {
+    display: flex;
+    flex-direction: column;
+}
 .lists {
     margin-top: -150px;
 }
