@@ -49,11 +49,16 @@ export default () => {
       </section>
 
       <footer>
-        Feito com <span row='img' aria-label='coração'>♡</span> por Caio Santoss <br/>
-        Direitos de imagem para Netflix <br/>
+        Feito com <span row='img' aria-label='coração'>♡</span> por Caio Santoss <br />
+        Direitos de imagem para Netflix <br />
         Dados pegos do site themoviedb.org
       </footer>
 
+      {movieList.length <= 0 &&
+        <div className='loading'>
+          <img src="https://media.wired.com/photos/592744d3f3e2356fd800bf00/master/w_2240,c_limit/Netflix_LoadTime.gif" alt="netflix-loading"></img>
+        </div>
+      }
     </div>
   );
 }

@@ -11,8 +11,7 @@
     }
 
     &__list {
-        width: 999999999999px;
-
+        transition: all ease 0.5s;
         &--item {
             display: inline-block;
             width: 150px;
@@ -28,5 +27,35 @@
                 }
             }
         }
+    }
+
+    &--left,
+    &--right {
+        position: absolute;
+        width: 40px;
+        height: 225px;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 99;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        cursor: pointer;
+        opacity: 0;
+        transition: all ease 0.5s;
+    }
+
+    &--left {
+        left: 0;
+    }
+
+    &--right {
+        right: 0;
+    }
+
+    &:hover &--left,
+    &:hover &--right {
+        opacity: 1;
+
     }
 }
