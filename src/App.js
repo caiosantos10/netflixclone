@@ -48,6 +48,12 @@ export default () => {
         ))}
       </section>
 
+      <footer>
+        Feito com <span row='img' aria-label='coração'>♡</span> por Caio Santoss <br/>
+        Direitos de imagem para Netflix <br/>
+        Dados pegos do site themoviedb.org
+      </footer>
+
     </div>
   );
 }
