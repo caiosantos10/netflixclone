@@ -6,9 +6,77 @@
         height: inherit;
         background: linear-gradient(to top, #111 10%, transparent 90%);
     }
+
     &--horizontal-fade {
         width: inherit;
         height: inherit;
         background: linear-gradient(to right, #111 30%, transparent 70%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 30px;
+    }
+
+    &--name {
+        font-size: 60px;
+        font-weight: bold;
+    }
+
+    &__info {
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 15px;
+        display: flex;
+
+        &--points {
+            color: #46d369;
+            margin-right: 15px;
+        }
+
+        &--year {
+            margin-right: 15px;
+        }
+    }
+
+    &--description {
+        margin-top: 15px;
+        font-size: 20px;
+        color: #999;
+        max-width: 40%
+    }
+    &--genres {
+        margin-top: 15px;
+        font-size: 18px;
+        color: #999;
+    }
+
+    &__buttons {
+        margin-top: 15px;
+        display: flex;
+
+        &--watch,
+        &--add-list {
+            font-size: 20;
+            font-weight: bold;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-right: 10px;
+
+            &:hover {
+                opacity: 0.7;
+                transition: all ease 0.2s;
+            }
+        }
+
+        &--watch {
+            background-color: #FFF;
+            color: #000;
+        }
+
+        &--add-list {
+            background-color: #333;
+            color: #FFF;
+        }
     }
 }

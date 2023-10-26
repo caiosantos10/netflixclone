@@ -19,12 +19,15 @@ export default ({ item }) => {
                 <div className="featured--horizontal-fade">
                     <div className="featured--name">{item.name}</div>
                     <div className="featured__info">
-                        <div className="featured__info--points">{item.vote_average.toFixed(1) * 10}%</div>
+                        <div className="featured__info--points">{item.vote_average.toFixed(1) * 10}% relevante</div>
                         <div className="featured__info--year">{date.getFullYear()}</div>
                         <div className="featured__info--seasons">{item.number_of_seasons} temporada{item.number_of_seasons !== 1 ? 's' : ''}</div>
                     </div>
                     <div className="featured--description">{item.overview}</div>
-                    <div className="featured__buttons"></div>
+                    <div className="featured__buttons">
+                        <a className="featured__buttons--watch" href={`/watch/${item.id}`}>▶ Assistir</a>
+                        <a className="featured__buttons--add-list" href={`/list/add/${item.id}`}>+ Minha Lista</a>
+                    </div>
                     <div className="featured--genres"><strong>Gêneros: </strong>{genres.join(', ')}</div>
                 </div>
             </div>
